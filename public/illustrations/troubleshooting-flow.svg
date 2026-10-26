@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#55d6a9"/><stop offset="1" stop-color="#6aa8ff"/></linearGradient></defs>
+<rect width="760" height="360" rx="28" fill="#0b1620"/>
+<circle cx="670" cy="55" r="95" fill="#55d6a9" opacity=".08"/>
+<text x="38" y="48" fill="#e8f0f7" font-family="Arial,sans-serif" font-size="24" font-weight="700">Troubleshooting loop</text>
+<text x="38" y="76" fill="#8ea0b2" font-family="Arial,sans-serif" font-size="14">Thu thập bằng chứng trước khi thay đổi</text>
+<rect x="40.0" y="145" width="156.5" height="110" rx="16" fill="#111f2c" stroke="#2c4052"/>
+<text x="56.0" y="181" fill="#7cf0c9" font-family="Arial,sans-serif" font-size="15" font-weight="700">Observe</text>
+<text x="56.0" y="209" fill="#b7c4d1" font-family="Arial,sans-serif" font-size="12">symptom</text>
+<path d="M 200.5 200 H 210.5" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+<path d="M 206.5 194 L 213.5 200 L 206.5 206" fill="none" stroke="#55d6a9" stroke-width="2"/>
+<rect x="214.5" y="145" width="156.5" height="110" rx="16" fill="#111f2c" stroke="#2c4052"/>
+<text x="230.5" y="181" fill="#7cf0c9" font-family="Arial,sans-serif" font-size="15" font-weight="700">Narrow</text>
+<text x="230.5" y="209" fill="#b7c4d1" font-family="Arial,sans-serif" font-size="12">layer/service</text>
+<path d="M 375.0 200 H 385.0" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+<path d="M 381.0 194 L 388.0 200 L 381.0 206" fill="none" stroke="#55d6a9" stroke-width="2"/>
+<rect x="389.0" y="145" width="156.5" height="110" rx="16" fill="#111f2c" stroke="#2c4052"/>
+<text x="405.0" y="181" fill="#7cf0c9" font-family="Arial,sans-serif" font-size="15" font-weight="700">Change</text>
+<text x="405.0" y="209" fill="#b7c4d1" font-family="Arial,sans-serif" font-size="12">small fix</text>
+<path d="M 549.5 200 H 559.5" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+<path d="M 555.5 194 L 562.5 200 L 555.5 206" fill="none" stroke="#55d6a9" stroke-width="2"/>
+<rect x="563.5" y="145" width="156.5" height="110" rx="16" fill="#111f2c" stroke="#2c4052"/>
+<text x="579.5" y="181" fill="#7cf0c9" font-family="Arial,sans-serif" font-size="15" font-weight="700">Verify</text>
+<text x="579.5" y="209" fill="#b7c4d1" font-family="Arial,sans-serif" font-size="12">same test</text>
+<text x="38" y="326" fill="#6f8498" font-family="Arial,sans-serif" font-size="12">DevOps Handbook · sơ đồ học nhanh</text></svg>

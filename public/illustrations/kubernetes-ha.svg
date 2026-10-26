@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#55d6a9"/><stop offset="1" stop-color="#6aa8ff"/></linearGradient></defs>
+<rect width="760" height="360" rx="28" fill="#0b1620"/>
+<circle cx="670" cy="55" r="95" fill="#55d6a9" opacity=".08"/>
+<text x="38" y="48" fill="#e8f0f7" font-family="Arial,sans-serif" font-size="24" font-weight="700">MicroK8s HA · 3 control-plane</text>
+<text x="38" y="76" fill="#8ea0b2" font-family="Arial,sans-serif" font-size="14">Ba node giúp datastore chịu được một node lỗi</text>
+<rect x="40.0" y="145" width="214.7" height="110" rx="16" fill="#111f2c" stroke="#2c4052"/>
+<text x="56.0" y="181" fill="#7cf0c9" font-family="Arial,sans-serif" font-size="15" font-weight="700">master-01</text>
+<text x="56.0" y="209" fill="#b7c4d1" font-family="Arial,sans-serif" font-size="12">control-plane</text>
+<path d="M 258.7 200 H 268.7" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+<path d="M 264.7 194 L 271.7 200 L 264.7 206" fill="none" stroke="#55d6a9" stroke-width="2"/>
+<rect x="272.7" y="145" width="214.7" height="110" rx="16" fill="#111f2c" stroke="#2c4052"/>
+<text x="288.7" y="181" fill="#7cf0c9" font-family="Arial,sans-serif" font-size="15" font-weight="700">master-02</text>
+<text x="288.7" y="209" fill="#b7c4d1" font-family="Arial,sans-serif" font-size="12">control-plane</text>
+<path d="M 491.3 200 H 501.3" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+<path d="M 497.3 194 L 504.3 200 L 497.3 206" fill="none" stroke="#55d6a9" stroke-width="2"/>
+<rect x="505.3" y="145" width="214.7" height="110" rx="16" fill="#111f2c" stroke="#2c4052"/>
+<text x="521.3" y="181" fill="#7cf0c9" font-family="Arial,sans-serif" font-size="15" font-weight="700">master-03</text>
+<text x="521.3" y="209" fill="#b7c4d1" font-family="Arial,sans-serif" font-size="12">control-plane</text>
+<text x="38" y="326" fill="#6f8498" font-family="Arial,sans-serif" font-size="12">DevOps Handbook · sơ đồ học nhanh</text></svg>

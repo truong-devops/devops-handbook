@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Task Runbook Workflow</title>
+  <desc id="desc">Flow from requirement to verification, rollback and lessons learned.</desc>
+  <rect width="1200" height="520" rx="28" fill="#0b1220"/>
+  <text x="60" y="72" fill="#e5eefb" font-family="Arial, sans-serif" font-size="34" font-weight="700">Task Runbook</text>
+  <text x="60" y="110" fill="#94a3b8" font-family="Arial, sans-serif" font-size="20">Ghi lại để lần sau có thể tự làm lại một cách an toàn</text>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g>
+      <rect x="55" y="190" width="145" height="94" rx="18" fill="#132238" stroke="#334155"/>
+      <text x="128" y="225" fill="#6ee7b7" font-size="18" font-weight="700">1. Yêu cầu</text>
+      <text x="128" y="254" fill="#cbd5e1" font-size="15">Task cần gì?</text>
+    </g>
+    <g>
+      <rect x="225" y="190" width="145" height="94" rx="18" fill="#132238" stroke="#334155"/>
+      <text x="298" y="225" fill="#6ee7b7" font-size="18" font-weight="700">2. Hiện trạng</text>
+      <text x="298" y="254" fill="#cbd5e1" font-size="15">Check trước</text>
+    </g>
+    <g>
+      <rect x="395" y="190" width="145" height="94" rx="18" fill="#132238" stroke="#334155"/>
+      <text x="468" y="225" fill="#fbbf24" font-size="18" font-weight="700">3. Backup</text>
+      <text x="468" y="254" fill="#cbd5e1" font-size="15">Có rollback?</text>
+    </g>
+    <g>
+      <rect x="565" y="190" width="145" height="94" rx="18" fill="#132238" stroke="#334155"/>
+      <text x="638" y="225" fill="#60a5fa" font-size="18" font-weight="700">4. Thực hiện</text>
+      <text x="638" y="254" fill="#cbd5e1" font-size="15">Command + lý do</text>
+    </g>
+    <g>
+      <rect x="735" y="190" width="145" height="94" rx="18" fill="#132238" stroke="#334155"/>
+      <text x="808" y="225" fill="#6ee7b7" font-size="18" font-weight="700">5. Verify</text>
+      <text x="808" y="254" fill="#cbd5e1" font-size="15">Expected result</text>
+    </g>
+    <g>
+      <rect x="905" y="190" width="145" height="94" rx="18" fill="#132238" stroke="#334155"/>
+      <text x="978" y="225" fill="#fca5a5" font-size="18" font-weight="700">6. Rollback</text>
+      <text x="978" y="254" fill="#cbd5e1" font-size="15">Nếu có lỗi</text>
+    </g>
+  </g>
+
+  <g stroke="#64748b" stroke-width="3" fill="none">
+    <path d="M200 237H225"/><path d="M370 237H395"/><path d="M540 237H565"/><path d="M710 237H735"/><path d="M880 237H905"/>
+  </g>
+
+  <rect x="225" y="350" width="315" height="100" rx="18" fill="#101d30" stroke="#334155"/>
+  <text x="382" y="387" text-anchor="middle" fill="#fbbf24" font-family="Arial, sans-serif" font-size="20" font-weight="700">Troubleshooting</text>
+  <text x="382" y="420" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="16">Lỗi → nguyên nhân → cách xử lý</text>
+
+  <rect x="660" y="350" width="315" height="100" rx="18" fill="#101d30" stroke="#334155"/>
+  <text x="817" y="387" text-anchor="middle" fill="#6ee7b7" font-family="Arial, sans-serif" font-size="20" font-weight="700">Bài học</text>
+  <text x="817" y="420" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="16">Tự giải thích lại bằng lời của mình</text>
+</svg>

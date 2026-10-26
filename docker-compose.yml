@@ -1,0 +1,69 @@
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/001-init.sql:ro
+      - ./scripts/extend.sql:/docker-entrypoint-initdb.d/002-extend.sql:ro
+    networks:
+      - handbook
+
+  migrate:
+    image: postgres:17-alpine
+    restart: "no"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./scripts/init.sql:/scripts/init.sql:ro
+      - ./scripts/extend.sql:/scripts/extend.sql:ro
+    command:
+      - sh
+      - -c
+      - |
+        set -e
+        psql -h db -U $$POSTGRES_USER -d $$POSTGRES_DB -v ON_ERROR_STOP=1 -f /scripts/init.sql
+        psql -h db -U $$POSTGRES_USER -d $$POSTGRES_DB -v ON_ERROR_STOP=1 -f /scripts/extend.sql
+    networks:
+      - handbook
+
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      NODE_ENV: production
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:3000:3000"
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://127.0.0.1:3000/api/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))\""]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+    networks:
+      - handbook
+
+volumes:
+  postgres_data:
+
+networks:
+  handbook:

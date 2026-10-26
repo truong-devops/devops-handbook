@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">OSI and TCP IP Model</title>
+  <desc id="desc">Seven OSI layers mapped to the four layer TCP IP model with DevOps examples.</desc>
+  <rect width="1200" height="760" rx="28" fill="#0b1220"/>
+  <text x="60" y="70" fill="#e5eefb" font-family="Arial, sans-serif" font-size="34" font-weight="700">OSI ↔ TCP/IP</text>
+  <text x="60" y="108" fill="#94a3b8" font-family="Arial, sans-serif" font-size="20">Mental model để biết lỗi mạng đang nằm ở tầng nào</text>
+
+  <g font-family="Arial, sans-serif">
+    <text x="230" y="160" text-anchor="middle" fill="#cbd5e1" font-size="20" font-weight="700">OSI</text>
+    <text x="830" y="160" text-anchor="middle" fill="#cbd5e1" font-size="20" font-weight="700">TCP/IP</text>
+
+    <g>
+      <rect x="60" y="185" width="440" height="64" rx="14" fill="#17304a"/><text x="85" y="225" fill="#e5eefb" font-size="18"><tspan font-weight="700">7 Application</tspan> — HTTP · HTTPS · DNS · SSH</text>
+      <rect x="60" y="257" width="440" height="64" rx="14" fill="#17304a"/><text x="85" y="297" fill="#e5eefb" font-size="18"><tspan font-weight="700">6 Presentation</tspan> — TLS · Encoding</text>
+      <rect x="60" y="329" width="440" height="64" rx="14" fill="#17304a"/><text x="85" y="369" fill="#e5eefb" font-size="18"><tspan font-weight="700">5 Session</tspan> — Session management</text>
+      <rect x="60" y="401" width="440" height="64" rx="14" fill="#153b36"/><text x="85" y="441" fill="#e5eefb" font-size="18"><tspan font-weight="700">4 Transport</tspan> — TCP · UDP · Port</text>
+      <rect x="60" y="473" width="440" height="64" rx="14" fill="#3b3115"/><text x="85" y="513" fill="#e5eefb" font-size="18"><tspan font-weight="700">3 Network</tspan> — IP · Routing · ICMP</text>
+      <rect x="60" y="545" width="440" height="64" rx="14" fill="#37223d"/><text x="85" y="585" fill="#e5eefb" font-size="18"><tspan font-weight="700">2 Data Link</tspan> — Ethernet · MAC · ARP</text>
+      <rect x="60" y="617" width="440" height="64" rx="14" fill="#37223d"/><text x="85" y="657" fill="#e5eefb" font-size="18"><tspan font-weight="700">1 Physical</tspan> — Cable · Fiber · Wi-Fi</text>
+    </g>
+
+    <g>
+      <rect x="665" y="185" width="380" height="208" rx="18" fill="#17304a" stroke="#60a5fa"/><text x="855" y="252" text-anchor="middle" fill="#60a5fa" font-size="24" font-weight="700">Application</text><text x="855" y="292" text-anchor="middle" fill="#cbd5e1" font-size="17">HTTP · DNS · SSH · TLS</text><text x="855" y="330" text-anchor="middle" fill="#94a3b8" font-size="15">curl · dig · openssl</text>
+      <rect x="665" y="401" width="380" height="64" rx="16" fill="#153b36" stroke="#34d399"/><text x="855" y="441" text-anchor="middle" fill="#6ee7b7" font-size="22" font-weight="700">Transport — TCP / UDP</text>
+      <rect x="665" y="473" width="380" height="64" rx="16" fill="#3b3115" stroke="#fbbf24"/><text x="855" y="513" text-anchor="middle" fill="#fbbf24" font-size="22" font-weight="700">Internet — IP / Route</text>
+      <rect x="665" y="545" width="380" height="136" rx="18" fill="#37223d" stroke="#c084fc"/><text x="855" y="600" text-anchor="middle" fill="#d8b4fe" font-size="22" font-weight="700">Network Access</text><text x="855" y="636" text-anchor="middle" fill="#cbd5e1" font-size="17">Ethernet · MAC · NIC · Wi-Fi</text>
+    </g>
+
+    <g stroke="#64748b" stroke-width="3" fill="none">
+      <path d="M500 217H665"/><path d="M500 289H620V217H665"/><path d="M500 361H620V217H665"/>
+      <path d="M500 433H665"/><path d="M500 505H665"/><path d="M500 577H620V613H665"/><path d="M500 649H620V613H665"/>
+    </g>
+  </g>
+</svg>
